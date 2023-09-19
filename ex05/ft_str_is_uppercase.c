@@ -6,11 +6,10 @@
 /*   By: tamet <tamet@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 17:37:13 by tamet             #+#    #+#             */
-/*   Updated: 2023/09/19 17:48:05 by tamet            ###   ########.fr       */
+/*   Updated: 2023/09/20 00:43:26 by tamet            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 /* #include <stdio.h> */
 
 int	ft_str_is_uppercase(char *str)

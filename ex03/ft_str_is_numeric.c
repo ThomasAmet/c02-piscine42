@@ -6,22 +6,18 @@
 /*   By: tamet <tamet@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 00:43:40 by tamet             #+#    #+#             */
-/*   Updated: 2023/09/19 19:05:24 by tamet            ###   ########.fr       */
+/*   Updated: 2023/09/20 00:43:16 by tamet            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 /* #include <stdio.h> */
 
 int	ft_str_is_numeric(char *str)
 {
-	int	i;
-
-	i = 0;
-	while (*(str + i))
+	while (*str)
 	{
-		if (str[i] > 47 && str[i] < 58)
-			i ++;
+		if (*str > 47 && *str < 58)
+			str++;
 		else
 			return (0);
 	}
@@ -38,5 +34,4 @@ int	ft_str_is_numeric(char *str)
 	!ft_str_is_numeric(" ")?"OK":"Fail",
 	!ft_str_is_numeric("\\")?"OK":"Fail",
 	!ft_str_is_numeric("\n")?"OK":"Fail");
-}
- */
+} */

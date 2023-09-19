@@ -6,7 +6,7 @@
 /*   By: tamet <tamet@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/16 18:15:36 by tamet             #+#    #+#             */
-/*   Updated: 2023/09/19 19:04:23 by tamet            ###   ########.fr       */
+/*   Updated: 2023/09/19 21:13:06 by tamet            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,31 +16,26 @@
 
 int	ft_str_is_alpha(char	*str)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
+	while (*str)
 	{
-		if (str[i] > 47 && str[i] < 58)
-			i++;
-		else if (str[i] > 64 && str[i] < 91)
-			i++;
-		else if (str[i] > 96 && str[i] < 123)
-			i++;
+		if (*str > 64 && *str < 91)
+			str++;
+		else if (*str > 96 && *str < 123)
+			str++;
 		else
 			return (0);
 	}
 	return (1);
 }
 
-/* int		main()
-{
-	printf("%s\n%s\n%s\n%s\n%s\n%s\n",
-			ft_str_is_alpha("")?"OK":"Fail",
-			ft_str_is_alpha("ABCDEFGHIJKLMNOPQRSTUVWXZ")?"OK":"Fail",
-			ft_str_is_alpha("abcdefghijklmnopqrstuvwxyz")?"OK":"Fail",
-			!ft_str_is_alpha("1")?"OK":"Fail",
-			!ft_str_is_alpha(" ")?"OK":"Fail",
-			!ft_str_is_alpha("\\")?"OK":"Fail",
-			!ft_str_is_alpha("\n")?"OK":"Fail");
-} */
+// int		main()
+// {
+// 	printf("%s\n%s\n%s\n%s\n%s\n%s\n%s\n",
+// 			ft_str_is_alpha("")?"OK":"Fail",
+// 			ft_str_is_alpha("ABCDEFGHIJKLMNOPQRSTUVWXZ")?"OK":"Fail",
+// 			ft_str_is_alpha("abcdefghijklmnopqrstuvwxyz")?"OK":"Fail",
+// 			!ft_str_is_alpha("1")?"OK":"Fail",
+// 			!ft_str_is_alpha(" ")?"OK":"Fail",
+// 			!ft_str_is_alpha("\\")?"OK":"Fail",
+// 			!ft_str_is_alpha("\n")?"OK":"Fail");
+// }

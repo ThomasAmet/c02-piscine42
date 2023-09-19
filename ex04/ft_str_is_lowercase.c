@@ -6,23 +6,20 @@
 /*   By: tamet <tamet@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 16:24:05 by tamet             #+#    #+#             */
-/*   Updated: 2023/09/19 17:36:02 by tamet            ###   ########.fr       */
+/*   Updated: 2023/09/20 00:42:50 by tamet            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-/* #include <stdio.h> */
+/* #include <unistd.h>
+#include <stdio.h> */
 
 int	ft_str_is_lowercase(char *str)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
+	while (*str)
 	{
-		if (!(str[i] < 123 && str[i] > 96))
+		if (!(*str < 123 && *str > 96))
 			return (0);
-		i++;
+		str++;
 	}
 	return (1);
 }

@@ -6,12 +6,12 @@
 /*   By: tamet <tamet@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 17:48:39 by tamet             #+#    #+#             */
-/*   Updated: 2023/09/19 17:57:13 by tamet            ###   ########.fr       */
+/*   Updated: 2023/09/20 00:43:48 by tamet            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*  #include <stdio.h>
- */
+/* #include <stdio.h> */
+
 int	ft_str_is_printable(char *str)
 {
 	int	i;

@@ -6,26 +6,22 @@
 /*   By: tamet <tamet@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 07:29:37 by tamet             #+#    #+#             */
-/*   Updated: 2023/09/19 19:07:35 by tamet            ###   ########.fr       */
+/*   Updated: 2023/09/20 00:43:09 by tamet            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
-#include <string.h>
+/* #include <stdio.h>
+#include <string.h> */
 
-char	*ft_strcpy(char *des, char *src)
+char	*ft_strcpy(char *dest, char *src)
 {
 	int	i;
 
 	i = 0;
-	while (*(src + i))
-	{
-		*(des + i) = *(src + i);
-		i++;
-	}
-	des[i] = '\0';
-	return (des);
+	while (*src)
+		*(dest + i++) = *(src++);
+	dest[i] = '\0';
+	return (dest);
 }
 
 /* // strcpy returns a segmentation fault error whenever 
